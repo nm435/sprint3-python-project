@@ -47,24 +47,11 @@ def filter_by_genre(data, genre):
             retlist.append(data[i][1])
     return retlist
 print(filter_by_genre(video_game_sales,'Platform'))
+print(filter_by_genre(video_game_sales,'Puzzle'))
 
 def get_summary(game):
     for i in range(len(game)):
-        return f"{game[i][1]} {(game[i][3])} - {game[i][4]} - {game[i][9]}"
+        print( f"{game[i][1]} ({(game[i][3])}) - {game[i][4]} - ${game[i][9]}M")
 
 print(get_summary(video_game_sales))
-
-
-
-
-            
-        
-
-
-    
-
-
-
-
-    
 
