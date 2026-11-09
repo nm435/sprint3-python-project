@@ -40,13 +40,13 @@ def calculate_total_sales(game):
 
 print(calculate_total_sales(0))
 
-def filter_by_genre(data, genre):
+def filter_by_genre(data, genre='Platform'):
     retlist=[]
     for i in range(len(data)):
         if data[i][4]==genre:
             retlist.append(data[i][1])
     return retlist
-print(filter_by_genre(video_game_sales,'Platform'))
+print(filter_by_genre(video_game_sales))
 print(filter_by_genre(video_game_sales,'Puzzle'))
 
 def get_summary(game):
@@ -54,4 +54,31 @@ def get_summary(game):
         print( f"{game[i][1]} ({(game[i][3])}) - {game[i][4]} - ${game[i][9]}M")
 
 print(get_summary(video_game_sales))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            
+        
+
+
+    
+
+
+
+
+    
 
